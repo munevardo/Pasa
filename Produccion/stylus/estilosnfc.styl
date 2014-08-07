@@ -1,0 +1,108 @@
+@import "normalize.styl"
+@import "titilium.styl"
+
+
+border-radius(n)
+	-moz-border-radius n
+	-ms-border-radius n
+	-o-border-radius n
+	-wap-border-radius n
+	-webkit-border-radius n
+	border-radius n
+
+
+p-azul = #00A0D9
+
+h1
+	display inline-block
+	width 7em
+	color #fff
+	margin 0
+	font-family Titillium-Semibold
+
+h2
+	margin 0
+	font-family Titillium-Semibold
+	color #fff
+
+
+p
+	font-family Titillium-Semibold
+	display inline-block
+	margin-top -.3em
+
+figure	
+	padding 0
+	margin 0
+	display inline-block
+
+
+
+body
+	background-size 100%
+	background p-azul
+	width 100%
+	
+	background-repeat:no-repeat
+
+.container
+	background url('../img/nfcbg-01.png')
+	height 977px
+	width 100%
+	background-repeat:no-repeat
+	display inline-block
+
+.contain-text
+	display inline-block 
+	width 14em
+	margin-left 3em
+	margin-right 3em
+
+	
+.contain-text p
+	color #fff
+	display block
+	margin-top -.3em
+	
+
+
+.contain-img
+	width 10em
+	display inline-block
+	margin-left 8em
+	margin-right 3em
+
+.hondas
+	border-radius(50%)
+	background red
+	padding 2em
+	animation: animacionColor 60s infinite
+	
+
+
+
+
+
+
+@keyframes animacionColor {
+  from {
+    background: red;
+  }
+  to {
+    background: #fff;
+  }
+}
+
+.contain-text2
+	width 18em
+	margin-left 25em
+	margin-top 3em
+	color #fff
+	
+.contain-text3
+	width 18em
+	margin-left 35em
+	margin-top 3em
+	color #fff
+	
+
