@@ -89,8 +89,10 @@ figcaption
 
 .land1
 	background url('../img/bg-21.jpg')
-	
-	
+	/*background-size 100%
+	width 100%
+	height 42.6em
+	background-repeat:no-repeat*/
 
 
 .bajar
@@ -112,7 +114,9 @@ figcaption
 
 .land2
 	background #fff
-	
+	/*width 100%
+	height 43.8em
+	text-align center*/
 
 
 #container-phone
@@ -128,14 +132,21 @@ figcaption
 
 .land3
 	background url('../img/bg-2.jpg')
-	
+	/*background-size 100%
+	width 100%
+	height 46.6em
+	background-repeat:no-repeat*/
+
 .land3 p 
 	width 18em	
 
 .land4
 	background url('../img/bg-3.jpg')
 	text-align center
-	
+	/*background-size 100%
+	width 100%
+	height 41.6em
+	background-repeat:no-repeat*/
 	
  .phone
 	display inline-block

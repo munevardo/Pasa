@@ -3,11 +3,10 @@
 	<head>
 		
 		<!--estilos-->
-		<link rel="stylesheet" href="css/estilos.css"/>
-		<link rel="stylesheet" href="css/font-awesome.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/elements.css">
-		 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Kite+One' rel='stylesheet' type='text/css'>
-			
+			<link rel="stylesheet" href="css/normalize.css"/>
+			<link rel="stylesheet" href="css/estilos.css"/>
+	
+
 
 
 
@@ -19,7 +18,7 @@
 
 		<script src="js/jquery.scrollUp.min.js"></script>
 
-		 <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 
 
 		<!--metas-->
@@ -70,7 +69,10 @@
 
 
 		</script>
-
+		
+		<script>
+		$("#main").onepage_scroll(); 
+<		</script>
 
 	</head>
 	<body>
@@ -111,39 +113,41 @@
  </div>
  </div>
  <!-- Popup div termina aqui -->
-	
+<article id="main">
 	<section class="land1">
 		<article class="containertext">
 			<h1>El Banco en tu Bolsillo</h1>
-			<h2><p>La mejor alternativa para hacer todos<br/> tus pagos desde el móvil </p></h2>
+			<h2>La mejor alternativa para hacer todos<br/> tus pagos con el móvil </h2>
 		</article>		
 	</section>
 	<!--<a id="bajar1" class="bajar"><i class="fa fa-caret-down" style="font-size: 50px;"></i></a>-->
 	
 	<section class="land2">
 		<h2>Es así de Facil</h2>
-		<div class="phone">
-			<figure>
-				<img src="img/mobile-clound.png" alt=""/>
-				<figcaption>Descarga</figcaption>
-			</figure>
-		</div>
-		<div class="phone">
-			<figure>
-				<img src="img/mobile-pay.png" alt="Sincroniza tus tarjetas de credito con pasa"/>
-				<figcaption>Sincroniza tus tarjetas</figcaption>
-			</figure>
-		</div>
-		<div class="phone">
-			<figure>
-				<img src="img/mobile-nfc.png" alt="Empieza a pagar pasa"/>
-				<figcaption>Empieza a pagar</figcaption>
-			</figure>
+		<div id="container-phone">
+			<div class="phone">
+				<figure>
+					<img src="img/mobile-clound.png" alt=""/>
+					<figcaption>Descarga</figcaption>
+				</figure>
+			</div>
+			<div class="phone">
+				<figure>
+					<img src="img/mobile-pay.png" alt="Sincroniza tus tarjetas de credito con pasa"/>
+					<figcaption>Sincroniza tus tarjetas</figcaption>
+				</figure>
+			</div>
+			<div class="phone">
+				<figure>
+					<img src="img/mobile-nfc.png" alt="Empieza a pagar pasa"/>
+					<figcaption>Empieza a pagar</figcaption>
+				</figure>
+			</div>
 		</div>
 	</section>
 	<section class="land3">
 		<article class="containertext"> 
-			<h2><p>Ahorra tiempo haciendo <br/>todos tus pagos Desde tu <br/>telefono.</p></h2>
+			<h2><p>Ahorra tiempo haciendo <br/>todos tus pagos con tu <br/>telefono.</p></h2>
 		</article>
 	</section>
 	<section class="land4">
@@ -165,24 +169,28 @@ potenciado por <a href="nfc.html">NFC</a></h2>
 		</figure>	
 	</div>
 	</section>
-
+	<!--footer-->
+	
 	<footer>
 	 <h5>Nos apoyan</h5>
 	<div class="apoyo">
 		<figure>
-			<a href="http://rutanmedellin.org/"><img src="img/rutan.png" alt="Apoyados por Ruta N medellin"/></a>	
+			<a href="http://rutanmedellin.org/"  target="_blank" ><img src="img/rutan.png" alt="Apoyados por Ruta N medellin"/></a>	
 		</figure>
 	</div>
 	<div class="apoyo">
 		<figure>
-			<a href="http://sena.blackboard.com/webapps/portal/frameset.jsp"><img src="img/sena.png" alt="Apoyados por el sena"/></a>
+			<a href="http://sena.blackboard.com/webapps/portal/frameset.jsp" target="_blank" ><img src="img/" alt="Apoyados por el sena"/></a>
 		</figure>
 	</div>
 	<div class="apoyo">	
 		<figure>
-			<a href="http://tecnoparque.sena.edu.co/Paginas/default.aspx"><img src="img/tecnoparque.png" alt="Apoyados por el tecnoparque sena"/></a>
+			<a href="http://tecnoparque.sena.edu.co/Paginas/default.aspx " target="_blank"><img src="img/.png" alt="Apoyados por el tecnoparque sena"/></a>
 		</figure>
 	</div>
 	</footer>
+	
+	
+</article>	
 	</body>
 </html>
