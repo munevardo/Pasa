@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ES">
+	<head>
+		
+	<!--estilos-->
+		<link rel="stylesheet" href="css/normalize.css"/>
+		<link rel="stylesheet" href="css/estilos.css"/>
+	
+	<!--script-->
+		<script src="js/lightbox.min.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+	<!--metas-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="utf-8">
+		
+
+	<script>
+
+			$(document).ready(function(){
+		 		
+		 		$.scrollUp();
+		 		
+		 		$.scrollUp({
+				  	animation: "slide",
+				    scrollText: "Subir",
+				     scrollDistance: 200,
+				 	 scrollImg: true
+				   
+				 });
+		 	});
+	</script>
+	<script>
+		$("#main").onepage_scroll(); 
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="nfc.html">¿Que es NfC?</a></li>
+				<li><a href="#land5">Nosotros</a></li>
+				
+				<li><a id = "popup" onclick ="div_show()">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!-- body starts here -->
+ <div id ="bdy" onclick = "check(event)" style="overflow:hidden;">
+ 
+ <div id="abc">
+ 
+	 <!-- Popup comienza aqui-->
+ <div id="popupContact"> 
+	<!-- contact form -->
+		<form action="#" method="post" id="form" >
+			<img src="img/3.png" id="close"/>
+			<h2>Contactanos</h2><hr/>
+			<input type="text" name="name" id="name" placeholder="Nombre"/>
+			
+			<input type="text" name="email" id="email" placeholder="Correo"/>
+			
+			<textarea name="message" placeholder="Mensage" id="msg"></textarea>
+			
+			<a id="submit" href="javascript: check_empty()">Enviar</a>	
+		</form>
+ </div> 
+
+ </div>
+ </div>
+ <!-- Popup div termina aqui -->
+<section id="main">
+	<article id="land1">
+		<article class="containertext">
+			<h1>El Banco en tu Bolsillo</h1>
+			<h2>La mejor alternativa para hacer todos<br/> tus pagos con el móvil </h2>
+		</article>		
+	</article>
+	<article id="land2">
+		<h2>Es así de Facil</h2>
+		<div id="container-phone">
+			<div class="phone">
+				<figure>
+					<img src="img/mobile-clound.png" alt=""/>
+					<figcaption>Descarga</figcaption>
+				</figure>
+			</div>
+			<div class="phone">
+				<figure>
+					<img src="img/mobile-pay.png" alt="Sincroniza tus tarjetas de credito con pasa"/>
+					<figcaption>Sincroniza tus tarjetas</figcaption>
+				</figure>
+			</div>
+			<div class="phone">
+				<figure>
+					<img src="img/mobile-nfc.png" alt="Empieza a pagar pasa"/>
+					<figcaption>Empieza a pagar</figcaption>
+				</figure>
+			</div>
+		</div>
+	</article>
+	<article id="land3">
+		<section class="containertext"> 
+			<h2><p>Ahorra tiempo haciendo <br/>todos tus pagos con tu <br/>telefono.</p></h2>
+		</section>
+	</article>
+	<section id="land4">
+			<article class="containertext">
+				<h2>24/7<br/>Segurisad a tus datos<br/>potenciado por <a href="nfc.html">NFC</a></h2>
+			</article>
+			<div class="phone-server">		
+				<figure>
+					<img class="phone" src="img/mobile-server.png" alt="mobile seguro 24/7"/>
+				</figure>
+			</div>
+	</section>
+	<section id="land5">
+	<article class="phone">
+			<figure>
+				<img src="img/small-pasa-mobil-quienes-somos.png" id="filosofia-mobil" alt="quienes somos pasa version mobil">
+			</figure>	
+		</article>
+		<article class="phone">
+			<figure>
+				<img src="img/pasa-mobil-quienes-somos.png" id="filosofia" alt="quienes somos pasa">
+			</figure>	
+		</article>
+	<!--footer-->
+	<footer>
+		<div class="apoyo">
+			<figure>
+				<a href="http://rutanmedellin.org/"  target="_blank" ><img src="img/rutan.png" alt="Apoyados por Ruta N medellin"/></a>	
+			</figure>
+		</div>
+		<div class="apoyo">
+			<figure>
+				<a href="http://sena.blackboard.com/webapps/portal/frameset.jsp" target="_blank" ><img src="img/" alt="Apoyados por el sena"/></a>
+			</figure>
+		</div>
+		<div class="apoyo">	
+			<figure>
+				<a id="tecnoparque" href="http://tecnoparque.sena.edu.co/Paginas/default.aspx " target="_blank"><img src="img/tecnoparque.png" alt="Apoyados por el tecnoparque sena"/></a>
+			</figure>
+		</div>
+	</footer>	
+	</section>
+</section>	
+</body>
+</html>

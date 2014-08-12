@@ -13,13 +13,6 @@ border-radius(n)
 	-wap-border-radius n
 	-webkit-border-radius n
 	border-radius n
-#main
-	position absolute
-	width 100%
-	height 100%
-	top 0px
-	left 0px
-	z-index -1
 	
 body
 	font-sise 10px
@@ -34,8 +27,6 @@ h2
 	color P_gris
 	text-align left
 	margin 0
-
-
 p
 	font-family "Titillium-Semibold"
 	color #fff
@@ -69,7 +60,22 @@ figcaption
 	text-align center
 	color P_gris
 	font-family "Titillium-Semibold"
-	margin-top -2em
+	margin-top -4em
+
+footer
+	text-align center
+
+footer figure img
+	width 12em
+	display inline-block
+
+#main
+	position absolute
+	width 100%
+	height 100%
+	top 0px
+	left 0px
+	z-index -1
 
 .containertext
 	margin-left 10%
@@ -78,8 +84,7 @@ figcaption
 	display inline-block 
 	vertical-align top
 
-	
-.land1,.land2,.land3,.land4
+#land1,#land2,#land3,#land4
 	display inline-block
 	width 100%
 	height 100%
@@ -87,12 +92,9 @@ figcaption
 	background-position center !important
 	background-repeat no-repeat	
 
-.land1
+#land1
 	background url('../img/bg-21.jpg')
 	
-	
-
-
 .bajar
 	position fixed
 	top 90%
@@ -106,55 +108,46 @@ figcaption
 	color #fff
 	border-radius(4%)
 
-
-.land1 p
+#land1 p
 	width 17em
 
 .land2
 	background #fff
+
+#land2 h2
+	color P_gris
+	text-align center !important
+	margin-top 2em
 	
-
-
 #container-phone
 	text-align center
 
 .phone
 	display inline-block
 
-.land2 h2
-	color P_gris
-	text-align center !important
-	margin-top 2em
-
-.land3
+#land3
 	background url('../img/bg-2.jpg')
 	
-.land3 p 
+#land3 p 
 	width 18em	
 
-.land4
+#land4
 	background url('../img/bg-3.jpg')
 	text-align center
-	
-	
+		
  .phone
 	display inline-block
-	text-align center
-
 
 .phone-server
 	display inline-block	
-	
 
-
-.land4 h2
+#land4 h2
 	width 10em
 	display inline-block
 
-.land4 figure 
+#land4 figure 
 	display inline-block
-	width 12em
-
+	width 14em
 
 #land5
 	background-size 100%
@@ -162,37 +155,39 @@ figcaption
 	height 42.6em
 	text-align center
 
-
-
-
-footer
-	text-align center
-
-footer figure img
-	width 12em
+section #land5 #filosofia
+	width 70%
 	display inline-block
 
 .apoyo
 	width 10em
 	display inline-block
 
+#tecnoparque
+	width 20%
+
+#filosofia-mobil
+	display none
 
 
 
-@media screen and (min-width:1000px)
+@media screen and (max-width:640px)
+	body
+		background red
+
+	section #land5 #filosofia			
+		display none
 	
-
-	
-	
-	section .land5 .phone
-		width 80%
-		margin-top 95px
-		
-	figure	
-		text-align left
+	#filosofia-mobil
 		display inline-block
-		width 100%
-	
+		width 70%		
+
+
+
+
+
+
+
 
 
 
